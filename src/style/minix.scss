@@ -1,0 +1,19 @@
+$blue:#1875e7;
+.tc{
+    color:$blue;
+    text-align: center
+}
+@mixin wh($width:100px, $height:100px) {
+  width: $width;
+  height: $height;
+}
+@mixin triangle($width:17px,$color:#1977F2) {
+  position: absolute;
+  right: -2*$width;
+  top:0;
+  content: '';
+  border-top: solid $width $color;
+  border-left: solid $width $color;
+  border-bottom: solid $width transparent;
+  border-right: solid $width transparent;
+}
